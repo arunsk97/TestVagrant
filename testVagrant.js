@@ -3,7 +3,6 @@ function playlist(totalUsers, totalPlaylistCap) {
 
     //setting playlist
     this.setRecentlyPlayed = function (user, song) {
-        
         if (curPlaylist.has(user)) {
             const curUser = curPlaylist.get(user);
             if(curUser.length >= totalPlaylistCap){
